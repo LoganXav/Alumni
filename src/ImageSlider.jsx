@@ -45,7 +45,7 @@ const ImageSlider  = ({ students, searchTerm, selectedDept }) => {
                     {students && searchedStudents.map((student) => (
                     <SplideSlide key={student.id} className="sm:max-w-full md:w-full md:h-[500px] p-2 bg-transparent sm:h-[200px] cursor-pointer group">
                        <Link to= {`/students/${student.id}`} >
-                            <div className=" sm:w-full rounded-md overflow-hidden md:w-auto relative sm:bg-transparent md:bg-black z-2 h-full duration-500 hover:transform sm:hover:translate-y-[-15px] md:hover:translate-y-[-60px] hover:transition-all hover:ease-in-out hover:duration-1000">
+                            <div className=" sm:w-full rounded-md shadow-md overflow-hidden md:w-auto relative sm:bg-transparent md:bg-black z-2 h-full duration-500 hover:transform sm:hover:translate-y-[-15px] md:hover:translate-y-[-60px] hover:transition-all hover:ease-in-out hover:duration-1000">
                                 
                                 <img                                                        
                                     className="sm:w-[full] md:w-full rounded-md h-full overflow-hidden center object-cover opacity-100 group-hover:opacity-50 transition duration-500" src={student.images[0] || dummyUser} alt="" 
