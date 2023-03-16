@@ -9,9 +9,16 @@ body{
   margin: 0px;
   padding: 0px;
   font-family: 'Tomorrow', sans-serif;
-  background-image: linear-gradient(to right,#000000d8,#b4b2b2);
+  /* background-image: url('./asset/bg.jpg'); */
+  /* background-image: url('https://images.hdqwalls.com/download/space-sun-planet-digital-lines-8k-k1-1336x768.jpg'); */
+  /* background-repeat: no-repeat;
+  background-size: cover; */
+  /* background-position: center, center; */
+  /* object-fit: cover; */
+  background-image: linear-gradient(to right,rgba(80, 79, 79, 0.847),#948b8b);
   height: 100%;
   width: 100%; 
+  overflow-x: hidden;
    
   
 }
