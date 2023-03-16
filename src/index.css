@@ -15,7 +15,7 @@ body{
   background-size: cover; */
   /* background-position: center, center; */
   /* object-fit: cover; */
-  background-image: linear-gradient(to right,rgba(80, 79, 79, 0.847),#948b8b);
+  background-color: rgb(129, 123, 123);
   height: 100%;
   width: 100%; 
   overflow-x: hidden;

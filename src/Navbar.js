@@ -67,7 +67,7 @@ const Navbar = ({searchTerm, setSearchTerm, setSelectedDept}) => {
                         initial={{ y: -300}}
                         animate={{ y: -10 }}
                         transition={{duration: 0.9, delay: 0.5, type: 'spring', stiffness: 120 }}>
-                        <button onClick={handleGoogleSignIn} className={`btn2 ${user == null ? 'bg-transparent text-white animate-pulse' : 'bg-white text-black'}`}><FaUser /></button> 
+                        <button onClick={handleGoogleSignIn} className={`btn2 ${user == null ? 'bg-transparent text-white animate-pulse' : 'bg-white text-white'}`}><FaUser /></button> 
                                               
                     </motion.div>                    
                 </motion.div>
@@ -103,7 +103,7 @@ const Navbar = ({searchTerm, setSearchTerm, setSelectedDept}) => {
             <div className='flex justify-center mt-5 sm:w-full'>
                     
                     <motion.div 
-                        className={`btn2 ${selectedButton === 'ABE' ? 'bg-white text-black' : 'bg-transparent text-white'}`}         //conditional styles based on the states of the selected button (dept)
+                        className={`btn2 ${selectedButton === 'ABE' ? 'bg-white text-white' : 'bg-transparent text-white'}`}         //conditional styles based on the states of the selected button (dept)
                         initial={{ x: '-100vw'}}
                         animate={{ x: 0 }}
                         transition={{duration: 5, delay: 1.6, type: 'spring', stiffness: 30 }}
@@ -111,7 +111,7 @@ const Navbar = ({searchTerm, setSearchTerm, setSelectedDept}) => {
                         >ABE
                     </motion.div>
                     <motion.div 
-                        className={`btn2 ${selectedButton === 'CVE' ? 'bg-white text-black' : 'bg-transparent text-white'}`}
+                        className={`btn2 ${selectedButton === 'CVE' ? 'bg-white text-white' : 'bg-transparent text-white'}`}
                         initial={{ x: '-100vw'}}
                         animate={{ x: 0 }}
                         transition={{duration: 5, delay: 1.0, type: 'spring', stiffness: 30 }}
@@ -119,7 +119,7 @@ const Navbar = ({searchTerm, setSearchTerm, setSelectedDept}) => {
                         >CVE
                     </motion.div>
                     <motion.div 
-                        className={`btn2 ${selectedButton === 'ELE' ? 'bg-white text-black' : 'bg-transparent text-white'}`}
+                        className={`btn2 ${selectedButton === 'ELE' ? 'bg-white text-white' : 'bg-transparent text-white'}`}
                         initial={{ x: '100vw'}}
                         animate={{ x: 0 }}
                         transition={{duration: 5, delay: 1.3, type: 'spring', stiffness: 30 }}
@@ -127,7 +127,7 @@ const Navbar = ({searchTerm, setSearchTerm, setSelectedDept}) => {
                         >ELE
                     </motion.div>
                     <motion.div 
-                        className={`btn2 ${selectedButton === 'MCE' ? 'bg-white text-black' : 'bg-transparent text-white'}`}
+                        className={`btn2 ${selectedButton === 'MCE' ? 'bg-white text-white' : 'bg-transparent text-white'}`}
                         initial={{ x: '100vw'}}
                         animate={{ x: 0 }}
                         transition={{duration: 5, delay: 1.9, type: 'spring', stiffness: 30 }}
@@ -135,7 +135,7 @@ const Navbar = ({searchTerm, setSearchTerm, setSelectedDept}) => {
                         >MCE
                     </motion.div>
                     <motion.div 
-                        className={`btn2 ${selectedButton === 'MTE' ? 'bg-white text-black' : 'bg-transparent text-white'}`}
+                        className={`btn2 ${selectedButton === 'MTE' ? 'bg-white text-white' : 'bg-transparent text-white'}`}
                         initial={{ x: '100vw'}}
                         animate={{ x: 0 }}
                         transition={{duration: 5, delay: 2.2, type: 'spring', stiffness: 30 }}

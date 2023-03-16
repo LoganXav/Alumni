@@ -110,7 +110,7 @@ const Modal = ({ students }) => {
 
     return(
         <AnimatePresence mode='wait'>            
-            <motion.div className='fixed top-0 left-0 w-full h-full backdrop-blur z-10'
+            <motion.div className='fixed sm:top-[-30px] left-0 w-full h-full backdrop-blur z-10'
                 variants = {backdrop}
                 initial = "hidden"
                 animate = "visible"
