@@ -53,11 +53,11 @@ const Navbar = ({searchTerm, setSearchTerm, setSelectedDept}) => {
     return ( 
         <div className=''>         
            
-                <motion.div className='flex origin-center max-w-[100vw] justify-between items-center m-[50px] border-b-[1px]'
+                <motion.div className='flex origin-center max-w-[100vw] justify-between items-center m-[30px] border-b-[1px]'
                      initial={{ scaleX: 0}}
                      animate={{ scaleX: 1 }}
                      transition={{ duration: 0.5, delay: 0.2}}>
-                    <motion.h1 className="text-white sm:text-[15px] md:text-[25px] tracking-wider font-bold animate-pulse uppercase" 
+                    <motion.h1 className="text-white sm:text-[15px] md:text-[20px] tracking-wider font-bold animate-pulse uppercase" 
                         initial={{ y: -300}}
                         animate={{ y: -10 }}
                         transition={{duration: 0.9, delay: 0.5, type: 'spring', stiffness: 120 }}>
@@ -67,7 +67,7 @@ const Navbar = ({searchTerm, setSearchTerm, setSelectedDept}) => {
                         initial={{ y: -300}}
                         animate={{ y: -10 }}
                         transition={{duration: 0.9, delay: 0.5, type: 'spring', stiffness: 120 }}>
-                        <button onClick={handleGoogleSignIn} className={`btn2 ${user == null ? 'bg-transparent text-white animate-pulse' : 'bg-white text-white'}`}><FaUser /></button> 
+                        <button onClick={handleGoogleSignIn} className={`btn2 ${user == null ? 'bg-transparent text-white animate-pulse' : 'bg-white text-black'}`}><FaUser /></button> 
                                               
                     </motion.div>                    
                 </motion.div>
@@ -78,7 +78,7 @@ const Navbar = ({searchTerm, setSearchTerm, setSelectedDept}) => {
                      animate={{ x: 0 }}
                      transition={{duration: 5, delay: 0.7, type: 'spring', stiffness: 70 }}>
                         <input                    
-                            className= "sm:text-[10px] md:text-[15px] md:w-full px-6 sm:py-1 md:py-3 bg-transparent border-none text-white leading-tight focus:outline-none"
+                            className= "sm:text-[10px] md:text-[12px] md:w-full px-4 sm:py-1 md:py-2 bg-transparent border-none text-white leading-tight focus:outline-none"
                             type="text"
                             placeholder="Find your friends..."
                             value={searchTerm}                                 //the searched term is passed up in state to be consumed by in the image slider
@@ -90,7 +90,7 @@ const Navbar = ({searchTerm, setSearchTerm, setSelectedDept}) => {
                         
                 </motion.div>
                 
-                    <motion.div onClick={handleNavigate} className="rounded-full md:flex ml-5 sm:hidden items-center font-light transition ease-out duration-500 sm:p-5 md:p-3 sm:text-[18px] md:text-[20px] bg-[gray] text-white uppercase md:cursor-pointer border md:hover:bg-white md:hover:text-black"
+                    <motion.div onClick={handleNavigate} className="rounded-full md:flex ml-5 sm:hidden items-center font-light transition ease-out duration-500 sm:p-5 md:p-3 sm:text-[16px] md:text-[16px] bg-[gray] text-white uppercase md:cursor-pointer border md:hover:bg-white md:hover:text-black"
                                     initial={{ scaleX: 0}}
                                     animate={{ scaleX: 1 }}
                                     transition={{duration: 5, delay: 3.5, type: 'spring', stiffness: 90 }}
@@ -100,7 +100,7 @@ const Navbar = ({searchTerm, setSearchTerm, setSelectedDept}) => {
                                        
             </div>                              
             
-            <div className='flex justify-center mt-5 sm:w-full'>
+            <div className='flex justify-center mt-3 sm:w-full'>
                     
                     <motion.div 
                         className={`btn2 ${selectedButton === 'ABE' ? 'bg-white text-white' : 'bg-transparent text-white'}`}         //conditional styles based on the states of the selected button (dept)

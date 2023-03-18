@@ -18,7 +18,7 @@ body{
   background-color: rgb(129, 123, 123);
   
   max-width: 100vw; 
-  overflow-x: hidden;
+  overflow: hidden;
    
   
 }
@@ -32,11 +32,11 @@ body{
 }
 
 .btn1 {
-  @apply rounded-full transition ease-out duration-500 mx-2 sm:px-2 md:px-3 sm:py-1 md:py-2 sm:text-[10px] md:text-[12px] uppercase cursor-pointer border text-black bg-white hover:text-white hover:bg-transparent
+  @apply rounded-full transition ease-out duration-500 mx-2 sm:px-2 md:px-3 sm:py-1 md:py-2 sm:text-[8px] md:text-[8px] uppercase cursor-pointer border text-black bg-white hover:text-white hover:bg-transparent
 }
 
 .btn2 {
-  @apply rounded-full flex items-center transition ease-out duration-500 mx-2 sm:px-2 md:px-3 sm:py-1 md:py-2 sm:text-[8px] md:text-[12px] uppercase cursor-pointer border hover:bg-white hover:text-black
+  @apply rounded-full flex items-center transition ease-out duration-500 mx-2 sm:px-2 md:px-3 sm:py-1 md:py-2 sm:text-[8px] md:text-[8px] uppercase cursor-pointer border hover:bg-white hover:text-black
 }
 
 .splide__pagination {
