@@ -116,7 +116,7 @@ const Modal = ({ students }) => {
                 animate = "visible"
                 exit = "hidden"
                 >
-                <motion.div className='sm:w-full sm:h-screen flex items-center flex-col md:max-w-[1200px] mt-0 mx-auto py-[40px]' 
+                <motion.div className='sm:w-full sm:h-screen flex items-center flex-col mt-0 mx-auto py-[40px]' 
                     variants= {modal}                    
                 >
                     <div className='flex justify-center items-center'>

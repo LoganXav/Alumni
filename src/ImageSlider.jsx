@@ -43,7 +43,7 @@ const ImageSlider  = ({ students, searchTerm, selectedDept }) => {
                 className="w-auto relative px-7 py-3 box-border sm:mt-[20%] md:mt-[1%] focus:outline-none active:border-none hover:border-none">
                 <Splide options = {splideOptions}>
                     {students && searchedStudents.map((student) => (
-                    <SplideSlide key={student.id} className="sm:max-w-full md:w-full md:h-[500px] p-2 bg-transparent sm:h-[200px] cursor-pointer group">
+                    <SplideSlide key={student.id} className="sm:max-w-full md:w-full md:h-[300px] p-2 bg-transparent sm:h-[200px] cursor-pointer group">
                        <Link to= {`/students/${student.id}`} >
                             <div className=" sm:w-full rounded-md shadow-sm overflow-hidden md:w-auto relative sm:bg-transparent md:bg-black z-2 h-full duration-500 hover:transform sm:hover:translate-y-[-15px] md:hover:translate-y-[-60px] hover:transition-all hover:ease-in-out hover:duration-1000">
                                 
@@ -56,7 +56,7 @@ const ImageSlider  = ({ students, searchTerm, selectedDept }) => {
                                     <li className="list-none"><div className="icon-container" href="#"><AiOutlineMail className="icon"/></div></li>
                                 </ul>
                                 <div className="absolute sm:top-[25%] sm:p-10 sm:left-[-5%] md:w-auto md:h-[120px] md:top-[453px] md:left-[0] md:group-hover:bottom-[-100px] bg-transparent z-2 p-3 duration-[.6s]">
-                                    <h2 className="my-[30px] sm:text-[10px] md:text-lg text-white text-center md:text-lg font-bold">{student.firstName + " " + student.lastName}<span className="text-lg text-white font-light sm:opacity-0 md:opacity-100 leading-[2]">  |  {student.department}</span> </h2>
+                                    <h2 className="my-[30px] sm:text-[10px] text-white text-center md:text-lg font-bold">{student.firstName + " " + student.lastName}<span className="text-lg text-white font-light sm:opacity-0 md:opacity-100 leading-[2]">  |  {student.department}</span> </h2>
                                 </div>
                             </div>
                         </Link>

@@ -19,7 +19,7 @@ const AddMemory = () => {
             opacity: 0
         },
         visible: {
-            y: "100px",
+            y: "10vh",
             opacity: 1,
             transition: { delay: 0.5, type: 'spring', stiffness: 30 }
         }
@@ -102,11 +102,11 @@ const AddMemory = () => {
                 animate = "visible"
                 exit = "hidden"
                 >
-                <motion.div className='sm:w-full sm:h-screen flex items-center flex-col md:max-w-[2500px] mt-0 mx-auto sm:pt-[0px] md:py-[40px]' 
+                <motion.div className='sm:w-full sm:h-screen flex items-center flex-col mt-0 mx-auto sm:pt-[0px] md:py-[40px]' 
                     variants= {modal}                    
                 >
-                    <form onSubmit={handleSubmit} className = "py-0 flex sm:w-[80%] md:w-[70%] flex-col gap-3 px-5 border text-white rounded-md">
-                        <h1 className='text-white text-[20px] my-6 font-bold text-center'>Add a Memory</h1>
+                    <form onSubmit={handleSubmit} className = "py-0 flex sm:w-[80%] md:w-[70%] flex-col sm:gap-2 md:gap-3 px-5 border text-white rounded-md">
+                        <h1 className='text-white sm:text-[14px] md:text-[20px] sm:my-4 md:my-6 font-bold text-center'>Add a Memory</h1>
 
                         <label className='mx-auto w-[70%]'>                            
                             <input
@@ -164,7 +164,7 @@ const AddMemory = () => {
                             onChange={handleChange}
                             />
                         </label> 
-                        <span className="flex justify-center">Add Photos:</span>
+                        <span className="flex justify-center text-[12px]">Add Photos</span>
                         <label className='flex sm:flex-col md:flex-row mx-auto md:justify-between'>
                             
                             <label className='sm:flex sm:flex-wrap md:block md:w-1/2'>
