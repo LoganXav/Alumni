@@ -110,7 +110,7 @@ const Modal = ({ students }) => {
 
     return(
         <AnimatePresence mode='wait'>            
-            <motion.div className='fixed top-0 left-0 w-full h-full backdrop-blur z-10'
+            <motion.div className='fixed top-0 left-0 w-full h-screen backdrop-blur z-10'
                 variants = {backdrop}
                 initial = "hidden"
                 animate = "visible"
@@ -126,19 +126,19 @@ const Modal = ({ students }) => {
                     </div>                           
                    {student && <div className='grid md:grid-cols-4 sm:grid-cols-2 sm:gap-2 mx-auto sm:my-[20px] md:my-[50px]'>
                         <div className='relative'>
-                            {check && (student.images[1] ? <FaTrash onClick={() => handleDelete(1)} className="absolute top-[87%] text-white cursor-pointer w-[30px] right-[10%] transform hover:scale-125 transition duration-300"/> : <FaCamera onClick={() => handleClick(1)} className="absolute top-[87%] text-white cursor-pointer w-[30px] right-[15%] transform hover:scale-125 transition duration-300"/>)}
+                            {check && (student.images[1] ? <FaTrash onClick={() => handleDelete(1)} className="absolute top-[87%] text-white cursor-pointer sm:w-[15px] md:w-[30px] right-[10%] transform hover:scale-125 transition duration-300"/> : <FaCamera onClick={() => handleClick(1)} className="absolute top-[87%] text-white cursor-pointer sm:w-[15px] md:w-[30px] right-[15%] transform hover:scale-125 transition duration-300"/>)}
                             <img className="rounded-md sm:w-[130px] md:w-[250px] sm:h-[130px] md:h-[250px] object-cover"  src={student.images[1] || dummyUser} alt="" />
                         </div>
                         <div className='relative'>
-                            {check && (student.images[2] ? <FaTrash onClick={() => handleDelete(2)} className="absolute top-[87%] text-white cursor-pointer w-[30px] right-[10%] transform hover:scale-125 transition duration-300"/> : <FaCamera onClick={() => handleClick(2)} className="absolute top-[87%] text-white cursor-pointer w-[30px] right-[15%] transform hover:scale-125 transition duration-300"/>)}
+                            {check && (student.images[2] ? <FaTrash onClick={() => handleDelete(2)} className="absolute top-[87%] text-white cursor-pointer sm:w-[15px] md:w-[30px] right-[10%] transform hover:scale-125 transition duration-300"/> : <FaCamera onClick={() => handleClick(2)} className="absolute top-[87%] text-white cursor-pointer sm:w-[15px] md:w-[30px] right-[15%] transform hover:scale-125 transition duration-300"/>)}
                             <img className="rounded-md sm:w-[130px] md:w-[250px] sm:h-[130px] md:h-[250px] object-cover"  src={student.images[2] || dummyUser} alt="" />
                         </div>
                         <div className='relative'>
-                            {check && (student.images[3] ? <FaTrash onClick={() => handleDelete(3)} className="absolute top-[87%] text-white cursor-pointer w-[30px] right-[10%] transform hover:scale-125 transition duration-300"/> : <FaCamera onClick={() => handleClick(3)} className="absolute top-[87%] text-white cursor-pointer w-[30px] right-[15%] transform hover:scale-125 transition duration-300"/>)}
+                            {check && (student.images[3] ? <FaTrash onClick={() => handleDelete(3)} className="absolute top-[87%] text-white cursor-pointer sm:w-[15px] md:w-[30px] right-[10%] transform hover:scale-125 transition duration-300"/> : <FaCamera onClick={() => handleClick(3)} className="absolute top-[87%] text-white cursor-pointer sm:w-[15px] md:w-[30px] right-[15%] transform hover:scale-125 transition duration-300"/>)}
                             <img className="rounded-md sm:w-[130px] md:w-[250px] sm:h-[130px] md:h-[250px] object-cover"  src={student.images[3] || dummyUser} alt="" />
                         </div>
                         <div className='relative'>
-                            {check && (student.images[4] ? <FaTrash onClick={() => handleDelete(4)} className="absolute top-[87%] text-white cursor-pointer w-[30px] right-[10%] transform hover:scale-125 transition duration-300"/> : <FaCamera onClick={() => handleClick(4)} className="absolute top-[87%] text-white cursor-pointer w-[30px] right-[15%] transform hover:scale-125 transition duration-300"/>)}
+                            {check && (student.images[4] ? <FaTrash onClick={() => handleDelete(4)} className="absolute top-[87%] text-white cursor-pointer sm:w-[15px] md:w-[30px] right-[10%] transform hover:scale-125 transition duration-300"/> : <FaCamera onClick={() => handleClick(4)} className="absolute top-[87%] text-white cursor-pointer sm:w-[15px] md:w-[30px] right-[15%] transform hover:scale-125 transition duration-300"/>)}
                             <img className="rounded-md sm:w-[130px] md:w-[250px] sm:h-[130px] md:h-[250px] object-cover"  src={student.images[4] || dummyUser} alt="" />
                         </div>
                         <input
